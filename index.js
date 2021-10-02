@@ -9,7 +9,6 @@ var http = require('http');
 
 const cors = require('cors');
 app.use(cors());
-let date = new Date();
 
 app.get('/justdance2022/download/pc', function (req, res) {
     var form = new multiparty.Form();
