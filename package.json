@@ -1,0 +1,38 @@
+{
+  "name": "justdance-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "0.10.26",
+    "npm": "1.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "bower": "^1.8.12",
+    "const": "^1.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "grunt": "^1.4.1",
+    "grunt-cli": "^1.4.3",
+    "grunt-sass": "^3.1.0",
+    "https": "^1.0.0",
+    "multiparty": "^4.2.2",
+    "path": "^0.12.7",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/grunt"
+}
